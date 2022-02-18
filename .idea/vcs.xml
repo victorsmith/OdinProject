@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JavaScript30" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OP-etch-a-sketch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OP-library" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OP-rock-paper-scissors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OP-tic-tac-toe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/javascript-exercises" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/odin-project-flexbox" vcs="Git" />
+  </component>
+</project>

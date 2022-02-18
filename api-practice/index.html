@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <script src="script.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+
+<body>
+    <img src="#" style="display: block; height: 400px; width: 400px;" />
+
+    <div style="margin-top: 10px;">
+
+        <input type="text" id="searchBar">
+        <button id="chanegPic" onclick="getNew()">
+            Search
+        </button>
+    </div>
+
+    <script>
+        const img = document.querySelector('img');
+        getNew()
+        // window.onload = getNew;
+
+        async function getNew() {
+            // Fetch is a promise
+            searchVal = getSearchValue()
+            url = `https://api.giphy.com/v1/gifs/translate?api_key=eEflH1HD7M4bL1jHHpBKaLqVL97EXKnW&s=${searchVal}`
+            try {
+                const resp = await fetch(url, { mode: 'cors' });
+                const picData = await resp.json();
+                img.src = picData.data.images.original.url;
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        function getSearchValue() {
+            const search = document.getElementById('searchBar');
+            const val = search.value;
+            search.value = "";
+            return val;
+        }
+
+    </script>
+</body>
+
+</html>
